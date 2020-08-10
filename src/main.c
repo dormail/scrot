@@ -55,7 +55,7 @@ main(int argc,
   init_x_and_imlib(opt.display, 0);
 
   if (!opt.output_file) {
-    opt.output_file = gib_estrdup("%Y-%m-%d-%H%M%S_$wx$h_scrot.png");
+    opt.output_file = gib_estrdup("/home/matthias/Images/screenshots/%Y-%m-%d-%H%M%S_$wx$h_scrot.png");
     opt.thumb_file = gib_estrdup("%Y-%m-%d-%H%M%S_$wx$h_scrot-thumb.png");
   } else {
     have_extension = scrot_have_file_extension(opt.output_file);
